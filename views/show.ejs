@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h4>"<%= data.name %>"</a></h4>
+    <%= data.age  %> 
+    <form action="/edit/<%= data._id %>" method="POST">
+        <button type="submit" >Edit</button>
+    </form>
+    <form action="/destroy/<%= data._id %>" method="POST">
+        <button type="submit" >Destroy</button>
+    </form>
+
+
+</body>
+</html>
